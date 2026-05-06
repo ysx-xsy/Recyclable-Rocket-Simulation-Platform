@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>images/galaxy.jpg</file>
+    <file>images/landing site.jpg</file>
+    <file>images/starship.jpg</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,20 @@
+<RCC>
+  <qresource prefix="images">
+    <file>images/starship.jpg</file>
+    <file>images/galaxy.jpg</file>
+    <file>images/landing_site.jpg</file>
+  </qresource>
+  <qresource prefix="icons">
+    <file>icons/rocket.png</file>
+    <file>icons/思考.png</file>
+    <file>icons/深度思考 (1).png</file>
+    <file>icons/CRMEB-配送单数-线性.png</file>
+    <file>icons/CRMEB-首页-线性.png</file>
+    <file>icons/帮助与说明.png</file>
+    <file>icons/播放.png</file>
+    <file>icons/齿轮.png</file>
+    <file>icons/分析.png</file>
+    <file>icons/建议.png</file>
+    <file>icons/深度思考.png</file>
+  </qresource>
+</RCC>
