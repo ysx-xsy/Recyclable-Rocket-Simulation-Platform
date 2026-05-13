@@ -47,16 +47,14 @@ def create_rectangle_poly(center, w, h):
 
 def create_grid_fin_R(delta, w, h):
     a, b = 10, 1
-    delta = np.pi/2 - delta
-    pts = [[w/2, h/2],[w/2 + a*np.sin(delta), h/2 - a*np.cos(delta)],[w/2 + b*np.cos(delta), h/2 + b*np.sin(delta)],
-            [w/2 + b*np.cos(delta) + a*np.sin(delta), h/2 + b*np.sin(delta) - a*np.cos(delta)]]
+    pts = [[w/2, h/2],[w/2 - b*np.sin(delta), h/2 + b*np.cos(delta)],[w/2 + a*np.cos(delta), h/2 + a*np.sin(delta)],
+            [w/2 - b*np.sin(delta) + a*np.cos(delta), h/2 + b*np.cos(delta) + a*np.sin(delta)]]
     return pts
 
 def create_grid_fin_L(delta, w, h):
     a, b = 10, 1
-    delta = np.pi/2 - delta
-    pts = [[-w/2, h/2],[-(w/2 + a*np.sin(delta)), h/2 - a*np.cos(delta)],[-(w/2 + b*np.cos(delta)), h/2 + b*np.sin(delta)],
-            [-(w/2 + b*np.cos(delta) + a*np.sin(delta)), h/2 + b*np.sin(delta) - a*np.cos(delta)]]
+    pts = [[-w/2, h/2],[-(w/2 - b*np.sin(delta)), h/2 + b*np.cos(delta)],[-(w/2 + a*np.cos(delta)), h/2 - a*np.sin(delta)],
+            [-(w/2 - b*np.sin(delta) + a*np.cos(delta)), h/2 + b*np.cos(delta) - a*np.sin(delta)]]
     return pts
 
 
@@ -130,3 +128,4 @@ def create_pose_matrix(tx=0., ty=0., tz=0.,
                  * np.asmatrix(base_correction)
 
     return np.array(PoseMatrix)
+
