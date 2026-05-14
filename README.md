@@ -4,7 +4,7 @@
 
   <img src="https://img.shields.io/badge/Python-3.10%2B-blue.svg">
   
-  <img src="https://img.shields.io/badge/Platform-PyQt%20%7C%20Python-orange">
+  <img src="https://img.shields.io/badge/Platform-PySide6%20%7C%20Python-orange">
   
   <img src="https://img.shields.io/badge/Control-TVC%20%2B%20Fin-blueviolet">
   
