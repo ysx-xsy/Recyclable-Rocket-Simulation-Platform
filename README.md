@@ -23,12 +23,12 @@
 - **高动态环境建模**  
   - 二维 3-DOF 火箭动力学（参考猎鹰9号一子级）  
   - 栅格舵简化气动模型（舵偏‑升/阻力系数拟合）  
-  - 多种扰动场景：初始大倾角、强侧风、位置偏移、高速下落等
+  - 多种测试场景：初始大倾角、强侧风、位置偏移、高速下落等
 
 - **一体化仿真与评估**  
   - 单次动画仿真：实时渲染火箭姿态、轨迹与关键参数  
-  - 蒙特卡洛批量测试：自定义扰动范围，自动统计成功率  
-  - 六维评价体系：落点精度、姿态角、收敛时间、稳定时间、燃料消耗、执行器能耗
+  - 蒙特卡洛批量测试：自定义仿真场景、收集飞行数据  
+  - 六维评价体系：落点精度、成功率、收敛时间、稳定时间、燃料消耗、执行器能耗
 
 - **图形化交互界面**  
   - 基于 `PySide6` 的前端，策略选择、参数配置“开箱即用”  
@@ -67,17 +67,127 @@
 │ │ ├── PID_controller/ # 基线控制器
 │ │ └── RL_Residual/ # 残差补偿训练
 ├── instruction/ # 用户手册
-├── examples/ # 示例仿真图像
+├── gallery/ # 平台界面
 ├── requirements.txt # Python 依赖
 └── README.md
 ```
 
 ## 📊 平台演示
 
+<table align="center">
+
+<tr>
+
+<td align="center" valign="top" width="50%">
+
+<img src="./gallery/page_1.png" width="420"><br>
+
+<b>Simulation Platform Main UI</b><br>
+<em>Figure 1</em>
+
+</td>
+
+<td align="center" valign="top" width="50%">
+
+<img src="./gallery/page_2.png" width="420"><br>
+
+<b>Scenario Configuration Interface</b><br>
+<em>Figure 2</em>
+
+</td>
+
+</tr>
+
+</table>
+
+<br>
+
+<table align="center">
+
+<tr>
+
+<td align="center" valign="top" width="50%">
+
+<img src="./gallery/Strong_crosswind_PID.gif" width="420"><br>
+
+<b>PID Controller</b><br>
+<em>Strong Crosswind Scenario · Figure 3</em>
+
+</td>
+
+<td align="center" valign="top" width="50%">
+
+<img src="./gallery/Strong_crosswind_PID_RL.gif" width="420"><br>
+
+<b>PID + RL Composite Controller</b><br>
+<em>Strong Crosswind Scenario · Figure 4</em>
+
+</td>
+
+</tr>
+
+</table>
+
+<br>
+
+<table align="center">
+
+<tr>
+
+<td align="center" valign="top" width="50%">
+
+<img src="./gallery/page_4.png" width="420"><br>
+
+<b>Monte Carlo Evaluation Settings</b><br>
+<em>Figure 5</em>
+
+</td>
+
+<td align="center" valign="top" width="50%">
+
+<img src="./gallery/page_5.png" width="420"><br>
+
+<b>Evaluation Data Interface</b><br>
+<em>Figure 6</em>
+
+</td>
+
+</tr>
+
+</table>
+
+<br>
+
+<table align="center">
+
+<tr>
+
+<td align="center" valign="top" width="50%">
+
+<img src="./gallery/page_6_index.png" width="420"><br>
+
+<b>Simulation Curves</b><br>
+<em>Position, Velocity , etc. · Figure 7</em>
+
+</td>
+
+<td align="center" valign="top" width="50%">
+
+<img src="./gallery/page_6_curve.png" width="420"><br>
+
+<b>Performance Metrics Comparison</b><br>
+<em>Controller Evaluation Results · Figure 8</em>
+
+</td>
+
+</tr>
+
+</table>
+
 ## 🔬 主要创新
 
 - **可应用于火箭回收的残差式混合控制架构** – PID 守底，RL 补偿，兼顾稳定性与鲁棒性
-- **课程学习训练范式** - 由易到难逐步开放扰动，大幅提升收敛效率与泛化能力
+- **课程学习训练范式** - 由易到难逐步开放扰动，提升收敛效率与泛化能力
 - **轻量化工程实现** - 纯 Python 打造，无商业软件依赖，可编译为跨平台独立应用
 
 ## 📚 应用前景
