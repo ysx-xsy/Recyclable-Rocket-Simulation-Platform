@@ -1,8 +1,22 @@
 # 可回收火箭推力-气动复合控制仿真平台
 
-![Python](https://img.shields.io/badge/python-3.10+-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
-![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey)
+<p align="left">
+
+  <img src="https://img.shields.io/badge/Python-3.10%2B-blue.svg">
+  
+  <img src="https://img.shields.io/badge/Platform-PyQt%20%7C%20Python-orange">
+  
+  <img src="https://img.shields.io/badge/Control-TVC%20%2B%20Fin-blueviolet">
+  
+  <img src="https://img.shields.io/badge/RL-Composite%20Controller-red">
+  
+  <img src="https://img.shields.io/badge/Research-Guidance%20%26%20Control-purple">
+  
+  <img src="https://img.shields.io/badge/Status-Active-success">
+  
+  <img src="https://img.shields.io/badge/License-MIT-lightgrey">
+
+</p>
 
 一个面向可回收运载火箭再入/着陆段的全流程可视化仿真平台，集成强化学习、经典PID以及混合控制策略，支持算法快速迭代、性能评估与动态演示。
 
@@ -69,7 +83,8 @@
 ├── instruction/ # 用户手册
 ├── gallery/ # 平台界面
 ├── requirements.txt # Python 依赖
-└── README.md
+├── README.md
+└── LICENSE
 ```
 
 ## 📊 平台演示
@@ -196,6 +211,24 @@
 - 飞行器控制与智能算法教学的数字化演示  
 - 垂直起降无人机等飞行器多执行器耦合系统的技术迁移
 
+## 🚧 后续计划
+
+- 🚧 修复平台尚存的一些问题
+- 🚧 完善部分算法与平台的接口
+- [ ] 建立并分析栅格舵高保真模型
+- [ ] 搭建火箭再入段飞行场景
+- [ ] 聚焦火箭再入段（栅格舵）控制过程
+- [ ] 研究并集成更多有效的控制算法
+- [ ] 探究六自由度火箭控制
+
+## 🙏 致谢
+
+该项目中的某些想法和具体实施细节受到了以下开源项目的启发：
+
+- [rocket-recycling](https://github.com/jiupinjia/rocket-recycling)
+
+特别感谢原作者所付出的卓越努力以及所提供的开源贡献。
+
 ## 🚀 快速开始
 
 ### 环境要求
@@ -209,3 +242,26 @@
 git clone https://github.com/ysx-xsy/Recyclable-Rocket-Simulation-Platform.git
 cd Recyclable-Rocket-Simulation-Platform
 pip install -r requirements.txt
+```
+> 平台使用说明及开源细节查看“instruction”
+
+## 📚 引用
+
+如果您认为此项目对您的研究有所帮助，请考虑引用下述文段：
+
+```bibtex
+@misc{recyclable_rocket_platform,
+  author       = {Sy Xu},
+  title        = {Recyclable Rocket Simulation Platform},
+  year         = {2026},
+  publisher    = {GitHub},
+  journal      = {GitHub repository},
+  howpublished = {\url{https://github.com/ysx-xsy/Recyclable-Rocket-Simulation-Platform}}
+}
+```
+
+## 📄 许可证
+
+This project is licensed under the MIT License.
+
+See the [LICENSE](./LICENSE) file for details.
